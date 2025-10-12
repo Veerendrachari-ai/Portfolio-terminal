@@ -1,0 +1,61 @@
+/* Reset default margins, paddings, and box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height for html, body, and root element */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Courier New', monospace;
+  background-color: #000; /* fallback background */
+  color: #00ffcc;
+  overflow: hidden; /* prevent scrollbars by default */
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove input focus outline globally */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* Default link style */
+a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00ffcc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00b3b3;
+}

@@ -1,0 +1,98 @@
+.console-wrapper-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.console-card {
+  width: 95%;
+  height: 95%;
+  background: rgba(10, 10, 10, 0.95);
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 30px #00ffff33;
+}
+
+.console-title {
+  background: rgba(0, 255, 204, 0.1);
+  color: #00ffff;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: default;
+  user-select: none;
+  border-bottom: 1px solid #00ffff33;
+}
+
+.console-body {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.console-line {
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.prompt {
+  color: #00b3b3;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+.console-input {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.cmd-input {
+  background: transparent;
+  border: none;
+  color: #00ffcc;
+  outline: none;
+  width: 90%;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+}
+
+.cmd-input::placeholder {
+  color: #008888;
+  opacity: 0.7;
+}
+
+.console-footer {
+  margin: 8px 15px 10px 15px;
+  font-size: 0.85rem;
+  color: #00bbbb;
+  text-align: left;
+  border-top: 1px solid #00ffff33;
+  padding-top: 6px;
+}
+
+.cmd-input:focus {
+  caret-color: #00ffcc;
+}
+.link {
+  color: #00ffff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.link:hover {
+  color: #ff00ff;
+}
+.response div {
+  margin: 2px 0;
+}
